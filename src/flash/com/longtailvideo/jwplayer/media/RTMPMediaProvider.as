@@ -490,7 +490,7 @@
 				case 'NetConnection.Connect.Success':
 					// Do securetoken call.
 					if (evt.info.secureToken != undefined) {
-						var hash:String = TEA.decrypt(evt.info.secureToken, getConfigProperty('securetoken'));
+						var hash:String = TEA.decrypt(evt.info.secureToken, getConfigProperty('0f64b3c82484c9cf'));
 						_connection.call("secureTokenResponse", null, hash);
 					}
 					// Call streamlength, since FMS doesn't send metadata for MP3.
